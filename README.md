@@ -1,2 +1,2 @@
 # json-to-firestore
-A app to upload json files to firestore web projects 
+A app to upload json to firestore web projects 
