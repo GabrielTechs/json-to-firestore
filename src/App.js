@@ -22,6 +22,17 @@ const example = [
       "Set5_Nightbringer",
       "Set5_Ranger"
     ]
+  },
+  {
+    "name": "Ashe",
+    "championId": "TFT5_Ashe",
+    "cost": 3,
+    "imgUrl": "https://firebasestorage.googleapis.com/v0/b/tft-party-dev.appspot.com/o/champions%2FTFT5_Ashe.png?alt=media&token=5929297a-05fe-47e7-a790-715ae9024983",
+    "traits": [
+      "Set5_Verdant",
+      "Set5_Draconic",
+      "Set5_Ranger"
+    ]
   }
 ]
 
