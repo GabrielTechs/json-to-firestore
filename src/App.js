@@ -1,6 +1,10 @@
 import './App.css';
 
 import {projectFirestore} from "./firebase/config"
+import {
+  collection,
+  addDoc,
+} from "@firebase/firestore";
 
 const example = [
   {
@@ -37,20 +41,15 @@ const example = [
 ]
 
 const uploadJsonHandler = () =>{
-  example.map((champion)=>{
-    return projectFirestore.collection("champions").add({
-      "name": champion.name,
-      "championId": champion.championId,
-      "cost": champion.cost,
-      "imgUrl": champion.imgUrl,
-      "traits": champion.traits
+    addDoc(collection(projectFirestore,"products"),{
+      name: "products",
+      products: example
     }).then(function(docRef) {
         console.log("Document written with ID: ", docRef.id);
     })
     .catch(function(error) {
         console.error("Error adding document: ", error);
     });
-  })
     alert("files uploaded")
 }
 
